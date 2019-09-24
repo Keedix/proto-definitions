@@ -1,6 +1,17 @@
 syntax = "proto3";
 
-message GameResultResponse {
+message LeagueSeason {
+  optional string league = 1;
+  optional string season = 2;
+}
+
+message LeaguesSeasons {
+  repeated LeagueSeason leaguesSeasons = 1;
+  optional int32 statusCode = 2;
+  optional string message = 3;
+}
+
+message GameResult {
   optional string league = 1;
   optional string season = 2; 
   optional string date = 3; 
@@ -14,8 +25,8 @@ message GameResultResponse {
   optional string htr = 11;
 }
 
-message GameResultsResponse {
-  repeated GameResultResponse gameResults = 1;
+message GameResults {
+  repeated GameResult gameResults = 1;
   optional int32 statusCode = 2;
   optional string message = 3;
 }
