@@ -1,32 +1,32 @@
 syntax = "proto3";
 
 message LeagueSeason {
-  optional string league = 1;
-  optional string season = 2;
+  string league = 1;
+  string season = 2;
 }
 
 message LeaguesSeasons {
   repeated LeagueSeason leaguesSeasons = 1;
-  optional int32 statusCode = 2;
-  optional string message = 3;
+  int32 statusCode = 2;
+  string message = 3;
 }
 
 message GameResult {
-  optional string league = 1;
-  optional string season = 2; 
-  optional string date = 3; 
-  optional string homeTeam = 4; 
-  optional string awayTeam = 5;
-  optional string fthg = 6; 
-  optional string ftag = 7; 
-  optional string ftr = 8; 
-  optional string hthg = 9; 
-  optional string htag = 10; 
-  optional string htr = 11;
+  string league = 1;
+  string season = 2; 
+  string date = 3; 
+  string homeTeam = 4; 
+  string awayTeam = 5;
+  string fthg = 6; 
+  string ftag = 7; 
+  string ftr = 8; 
+  string hthg = 9; 
+  string htag = 10; 
+  string htr = 11;
 }
 
 message GameResults {
   repeated GameResult gameResults = 1;
-  optional int32 statusCode = 2;
-  optional string message = 3;
+  int32 statusCode = 2;
+  string message = 3;
 }
